@@ -18,12 +18,9 @@ import java.util.Map;
 
 public class Linkedin {
 
-	 private static String API_KEY = "75oon66xx6ogdu";
-	 private static String API_SECRET ="8KB9NDXXigMpH4XE";
+	 private static String API_KEY = "7************u";
+	 private static String API_SECRET ="8**************E";
 	 
-//    private static String API_KEY = "75r4zb8b8axxub";
-//    private static String API_SECRET = "6ycIj2mNcduteKSo";
-
     public static void main(String[] args) {
 
 
@@ -157,7 +154,7 @@ public class Linkedin {
         //url = "http://api.linkedin.com/v1/people-search?title=D%C3%A9veloppeur&facets=location,industry&facet=location,fr,0";
        url = "http://api.linkedin.com/v1/people-search:(people:(first-name,last-name,headline),facets:(code,buckets))";
         request = new OAuthRequest(Verb.GET, url);
-        request.addQuerystringParameter("title", "Développeur");
+        request.addQuerystringParameter("title", "DÃ©veloppeur");
         request.addQuerystringParameter("facet", "industry,4");
         request.addQuerystringParameter("facets", "location,industry");
         System.out.println(request.getUrl());
